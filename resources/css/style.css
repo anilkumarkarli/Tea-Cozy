@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+body{
+    background-color:black;
+    font-family: roboto, sans-serif;
+    opacity: 0.9;
+    text-align: center;
+    color: seashell;
+    font-size: 22px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2{
+    font-family: "Roboto";
+}
+h3,h4,h5,h6,p{
+    font-family: "Open Sans";
+    font-weight: lighter;
+}
+
+/* header nav{
+    position: fixed;
+    top : 0; */
+/* } */
+
+
+
+header #logo img{
+    height: 50px;
+    opacity: .7;
+}
+
+nav{
+    /* z-index: 10; */
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: black;
+    /* margin-bottom: 50px; */
+    padding:  0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 69px;
+    border-bottom: 1px solid seashell;
+    /* padding-left: 10px; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links{
+    display: flex;
+    /* background-color: red; */
+    justify-content: flex-end;
+}
+.nav-links li{
+    list-style-type: none;
+    margin: 0 14px;
+}
+
+div.main{
+    padding-top : 69px;
+    width: 1200px;
+    margin:0 auto;
+    /* height: 700px; */
+}
+
+
+div#banner{
+    background-image: url(../imgs/img-mission-background.webp);
+    width:100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+#banner .mission-caption{
+    background-color: black;
+    align-self: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.mission-caption h1{
+    text-align: center;
+}
+
+.mission-caption h4{
+    text-align: center;
+}
+
+.product{
+    width: 1000px;
+    /* display:flex; */
+}
+
+.products-caption{
+    margin:60px 0 30px 0;
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.product .images-container{
+    display: flex;
+    flex: 0 0 row;   
+}
+
+.images-container .image-container{
+    display: inline-block;
+
+}
+
+.images-container img{
+    height: 200px;
+    width: 300px;
+}
+
+.image-container p{
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+.locations{
+    background-image: url(../imgs/img-locations-background.webp);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 45px;
+}
+.locations div h2{
+    margin-bottom: 25px;
+}
+
+.loc-add{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 25px; */
+}
+
+.location-card{
+    background-color: black;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    line-height: 2.5;
+}
+
+.location-card h3 {
+    margin: 10 auto;
+}
+
+.footer footer{
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    height: 180px;
+}
+div .copy{
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: 1.3;
+}
